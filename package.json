@@ -1,0 +1,27 @@
+{
+    "name": "mock-manager",
+    "version": "0.1.0",
+    "description": "📕 在线Mock管理平台",
+    "scripts": {
+        "start": "npm install && npm run server",
+        "server": "mock-servicer --config server.config.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hai2007/mock-manager"
+    },
+    "keywords": [
+        "mock",
+        "servicer",
+        "manager"
+    ],
+    "author": "你好2007",
+    "license": "MIT",
+    "dependencies": {
+        "@hai2007/nodejs": "^1.0.1",
+        "@hai2007/style": "^0.3.0",
+        "@hai2007/tool": "^0.6.6",
+        "mock-servicer": "^1.2.4",
+        "open-web-editor": "^0.3.0"
+    }
+}

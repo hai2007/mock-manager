@@ -1,0 +1,11 @@
+# 统一编辑器代码风格
+
+root = true
+
+[*]
+indent_style = space # 使用空格来缩进
+indent_size = 4 # 代码缩进尺寸；如果设置成tab，可以设置tab_width
+end_of_line = lf # Linux换行符 \n
+charset = utf-8 #编码方式
+trim_trailing_whitespace = true # 去除空白行行首的空白字符
+insert_final_newline = true # 每隔文件都以空白行来结尾

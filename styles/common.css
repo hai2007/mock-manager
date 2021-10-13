@@ -1,0 +1,28 @@
+/* webkit下滚动条样式 */
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  background-color: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 10px;
+  background-color: rgb(220, 231, 243);
+  border-radius: 5px;
+}
+
+/* IE浏览器下 */
+
+* {
+  /*三角箭头的颜色*/
+  scrollbar-arrow-color: rgb(225, 232, 240);
+  /*滚动条滑块按钮的颜色*/
+  scrollbar-face-color: #eeeeee;
+  /*滚动条整体颜色*/
+  scrollbar-highlight-color: #fff;
+  /*滚动条阴影*/
+  scrollbar-shadow-color: #ccc;
+  /*滚动条轨道颜色*/
+  scrollbar-track-color: #fff;
+}

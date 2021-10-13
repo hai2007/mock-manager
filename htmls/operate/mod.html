@@ -1,0 +1,49 @@
+<div ng-init='initMethod()' class='operate'>
+    <div>
+        <span>地址：</span>
+        <input class='input' type="text" ng-model='url' id='url'>
+    </div>
+    <div>
+        <span>描述：</span>
+        <input class='input' type="text" ng-model='remark' id='remark'>
+    </div>
+    <div>
+        <span>方法：</span>
+        <div class='input'>
+
+            <!-- get -->
+            <input id='method-get' type='radio' name='method' ng-model='method' value='GET'><label
+                for='method-get'>GET</label>
+
+            <!-- post -->
+            <input id='method-post' type='radio' name='method' ng-model='method' value='POST'><label
+                for='method-post'>POST</label>
+
+            <!-- head -->
+            <input id='method-head' type='radio' name='method' ng-model='method' value='HEAD'><label
+                for='method-head'>HEAD</label>
+
+            <!-- put -->
+            <input id='method-put' type='radio' name='method' ng-model='method' value='PUT'><label
+                for='method-put'>PUT</label>
+
+            <!-- delete -->
+            <input id='method-delete' type='radio' name='method' ng-model='method' value='DELETE'><label
+                for='method-delete'>DELETE</label>
+
+            <!-- OPTIONS -->
+            <input id='method-options' type='radio' name='method' ng-model='method' value='OPTIONS'><label
+                for='method-options'>OPTIONS</label>
+
+        </div>
+    </div>
+    <div class='editor' id='editor'></div>
+    <div>
+        <button class='return' ng-click='goto("Home.List")'>返回</button>
+        <button class='submit' ng-click='doSubmit()' ng-if='params.type!="query"'>提交</button>
+    </div>
+
+    <div class='link' id='link-data-url' ng-click='openMockDataPage()'>
+        {{preUrl}}query?url={{url}}&method={{method}}
+    </div>
+</div>

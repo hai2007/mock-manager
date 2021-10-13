@@ -1,0 +1,35 @@
+<div ng-init='initMethod()' class='list'>
+    <div class='top'>
+        <span ng-click='toOperate("add","","","")'>新增 +</span>
+    </div>
+    <div class='view doc-view'>
+        <table>
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>地址</th>
+                    <th>方法</th>
+                    <th>描述</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat='(key,value) in datalist'>
+                    <th>{{key+1}}</th>
+                    <th>{{value.url}}</th>
+                    <th>{{value.method}}</th>
+                    <th>{{value.remark}}</th>
+                    <th>
+                        <button class='delete' ng-click='delete(value.url,value.method)'>删除</button>
+                        <button class='update' ng-click='toOperate("update",value.url,value.method,value.remark)'>修改</button>
+                        <button class='copy' ng-click='toOperate("copy",value.url,value.method,value.remark)'>复制</button>
+                        <button class='query' ng-click='toOperate("query",value.url,value.method,value.remark)'>查看</button>
+                    </th>
+                </tr>
+                <tr class='blank-data'>
+                    <th colspan="5">无数据</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

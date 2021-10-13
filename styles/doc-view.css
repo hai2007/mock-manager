@@ -1,0 +1,38 @@
+.doc-view {
+    color: #000000;
+    padding: 15px;
+}
+
+/* 表格 */
+.doc-view>table {
+    width: 100%;
+    line-height: 30px;
+}
+
+.doc-view>table>tbody>tr>* {
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    border-color: #c1bcbc;
+}
+
+.doc-view>table>*>tr>td {
+    padding-left: 1em;
+}
+
+.doc-view>table>tbody>tr>*:first-child {
+    border-width: 0 1px 1px 1px;
+}
+
+.doc-view>table>tbody>tr:nth-child(2n) {
+    background-color: #F5F5F5;
+}
+
+.doc-view>table>tbody>tr:nth-child(2n+1) {
+    background-color: #fff;
+}
+
+.doc-view>table>thead>tr {
+    background-color: #c1bcbc;
+    border: 1px solid #c1bcbc;
+    color: #fff;
+}

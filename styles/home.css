@@ -1,0 +1,182 @@
+.home-view {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(247, 247, 247);
+}
+
+.home-view>header {
+    line-height: 70px;
+    background-color: #1e1918;
+    box-shadow: 0px 5px 5px 0px #c1c1ce;
+    color: white;
+    font-size: 26px;
+    font-family: fantasy;
+    padding-left: 20px;
+}
+
+.home-view>div {
+    margin: 20px 30px;
+    height: calc(100vh - 110px);
+    overflow: auto;
+}
+
+/* list */
+
+.home-view>div>.list>.top {
+    text-align: right;
+    height: 50px;
+    line-height: 50px;
+}
+
+.home-view>div>.list>.top>span {
+    display: inline-block;
+    background-color: #1e1918;
+    color: #f7f7f7;
+    line-height: 1em;
+    padding: 7px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.home-view>div>.list>.view {
+    height: calc(100vh - 160px);
+    overflow: auto;
+}
+
+.home-view>div>.list>.view>table button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.home-view>div>.list>.view>table button.delete {
+    background-color: rgb(241, 10, 10);
+    border-radius: 3px;
+}
+
+.home-view>div>.list>.view>table button.update {
+    background-color: #1e1918;
+    border-radius: 3px;
+}
+
+.home-view>div>.list>.view>table button.copy {
+    background-color: #1e1918;
+    border-radius: 3px;
+}
+
+.home-view>div>.list>.view>table button.query {
+    background-color: #1e1918;
+    border-radius: 3px;
+}
+
+.home-view>div>.list>.view>table>thead>tr {
+    background-color: #1e1918;
+    border-color: #1e1918;
+}
+
+.home-view>div>.list>.view>table>tbody>tr.blank-data {
+    display: none;
+}
+
+.home-view>div>.list>.view>table>tbody>tr.blank-data:first-child:last-child {
+    display: table-row;
+}
+
+.home-view>div>.list>.view>table>tbody>tr.blank-data>th {
+    height: 300px;
+    font-size: 0;
+    background-image: url('../images/nodata.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* operate */
+
+.home-view>div>.operate {
+    background-color: white;
+    height: 100%;
+    text-align: center;
+    overflow: auto;
+}
+
+.home-view>div>.operate>div {
+    padding: 20px 0;
+}
+
+.home-view>div>.operate>div.link {
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+.home-view>div>.operate>div.link:hover {
+    font-weight: 800;
+}
+
+.home-view>div>.operate>div>.input {
+    padding: 10px;
+    width: 400px;
+    outline: none;
+}
+
+.home-view>div>.operate>div>div.input {
+    display: inline-block;
+    text-align: left;
+}
+
+.home-view>div>.operate>div>div>input[type='radio'] {
+    width: 16px;
+    cursor: pointer;
+    margin: 0px;
+    display: none;
+}
+
+.home-view>div>.operate>div>div>input[type='radio']+label {
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.home-view>div>.operate>div>div>input[type='radio']:checked+label {
+    border-bottom: 2px solid black;
+    font-weight: 800;
+}
+
+.home-view>div>.operate>div>input[readonly] {
+    background-color: #e5ecf2;
+    cursor: no-drop;
+}
+
+.home-view>div>.operate>div>span:not(:first-child) {
+    margin-left: 50px;
+}
+
+.home-view>div>.operate>.editor {
+    text-align: left;
+    padding: 0;
+    margin: 0 20px;
+    min-height: 200px;
+    border: 1px solid #b2b2bd;
+}
+
+.home-view>div>.operate>div>button {
+    padding: 8px;
+    text-align: center;
+    width: 100px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.home-view>div>.operate>div>button.return {
+    background-color: rgb(209, 209, 209);
+    color: #746e6e;
+}
+
+.home-view>div>.operate>div>button.submit {
+    background-color: #1e1918;
+}
